@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
+title: 내 블로그얌
 email:
-description: A simple and awesome blog theme powered by jekyll.
+description: 
 url: # the base hostname & protocol for your site
 
 
