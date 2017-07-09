@@ -54,13 +54,12 @@ app.listen(3000, function() {
 app.get('/', function(req,res){
 	res.send("<h1>hi Thor</h1>")
 })
-
 ```
 
 9. /public/main.html 생성
 
+
 ```
-!<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -80,6 +79,7 @@ localhost:3000/public/main.html
 res.sendFile()
 
 11. app.js 수정
+
 ```
 var express = require('express')
 var app = express()
@@ -90,17 +90,12 @@ app.listen(3000, function() {
 app.get('/', function(req,res){
 	*** res.sendFile(__dirname + "/public/main.html") ***
 })
-
 ```
 
 --- static 디렉토리 설정
 12. app.js 수정
 아래 추가
-
-```
-app.use(express.static('public'))
-```
-
+`app.use(express.static('public'))`
 public 경로 아래에 위치한 파일들을 모두 static으로 요청 받아옴
 
 13. /public/main.js 추가
