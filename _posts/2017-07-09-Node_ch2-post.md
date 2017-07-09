@@ -84,39 +84,40 @@ image:
 ### View engine을 이용한 응답처리
 ##### ejs나 jade와 같은 템플릿 엔진을 활용해 view 템플릿을 활용해 응답 할 수 있다
 
-    1. ejs 모듈 설치
 
-        `npm install ejs --save`
+1. ejs 모듈 설치
 
-    2. 모듈 사용해서 나타내기 :: app.js
+    `npm install ejs --save`
 
-        ```
-        app.set('view engin', 'ejs')
-        ```
-    3. /views 경로 생성, /views/email.ejs 파일 생성
+2. 모듈 사용해서 나타내기 :: app.js
 
-        ```
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <meta charset="utf-8">
-            <title>email ejs template</title>
-          </head>
-          <body>
-            <h1>Welcom !! <%= email %> </h1>
-            <p>Nice to meet you</p>
+    ```
+    app.set('view engin', 'ejs')
+    ```
+3. /views 경로 생성, /views/email.ejs 파일 생성
 
-          </body>
-        </html>
+    ```
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>email ejs template</title>
+      </head>
+      <body>
+        <h1>Welcom !! <%= email %> </h1>
+        <p>Nice to meet you</p>
 
-        ```
+      </body>
+    </html>
 
-    4. email.ejs를 사용하려면 :: app.js
+    ```
 
-        ```
-        app.post('/email_post', function(req,res){
-        	console.log(req.body.email)
-        	//res.send("<h1>Welcome!" + req.body.email + "</h1>")
-        	res.render('email.ejs', {'email' : req.body.email})
-        })
-        ```
+4. email.ejs를 사용하려면 :: app.js
+
+    ```
+    app.post('/email_post', function(req,res){
+    	console.log(req.body.email)
+    	//res.send("<h1>Welcome!" + req.body.email + "</h1>")
+    	res.render('email.ejs', {'email' : req.body.email})
+    })
+    ```
