@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node ch.1
-excerpt: "Node 연습장"
+excerpt: "NPM 프로젝트 시작하기"
 categories: [hello world]
 comments: true
 image:
@@ -58,6 +58,7 @@ app.get('/', function(req,res){
 ```
 
 9. /public/main.html 생성
+
 ```
 !<!DOCTYPE html>
 <html>
@@ -95,16 +96,20 @@ app.get('/', function(req,res){
 --- static 디렉토리 설정
 12. app.js 수정
 아래 추가
+
 ```
 app.use(express.static('public'))
 ```
+
 public 경로 아래에 위치한 파일들을 모두 static으로 요청 받아옴
 
 13. /public/main.js 추가
 ```
 console.log("main js loaded");
 ```
+
 14. main.html 수정
+
 ```
 !<!DOCTYPE html>
 <html>
@@ -119,12 +124,13 @@ console.log("main js loaded");
 
   </body>
 </html>
-
 ```
+
 main.js 파일을 요청할 수 있게 되었음을 확인
 
 15. /main 으로 접속했을때에도 main.html 화면과 동일하게 나타내기
 app.js 에 아래 app.get 추가
+
 ```
 app.get('/main', function(req,res){
 	res.sendFile(__dirname + "/public/main.html")
