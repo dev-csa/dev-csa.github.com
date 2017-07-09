@@ -17,6 +17,7 @@ image:
 1. 디렉토리 생성
 2. npm init
 3. express 웹서버를 사용할거임
+
   npm node install express --save
   (package.json 에서 확인가능)
 
@@ -33,14 +34,16 @@ image:
   ```
 
 5. node app.js
+
   localhost:3000 < 서버 구동 확인
 
 6. nodemon 설치 (수정 사항 감지해서 자동 업데이트해주는 패키지)
+
   `sudo npm install nodemon -g`
 
 7. nodemon app.js
 
---- url routing 처리(GET 요청 처리)
+### url routing 처리(GET 요청 처리)
 8. app.js 수정
 
   ```
@@ -87,11 +90,11 @@ image:
   });
 
   app.get('/', function(req,res){
-  	*** res.sendFile(__dirname + "/public/main.html") ***
+  res.sendFile(__dirname + "/public/main.html")
   })
   ```
 
---- static 디렉토리 설정
+### static 디렉토리 설정
 12. app.js 수정
   ```
   app.use(express.static('public'))
@@ -125,7 +128,9 @@ image:
 
   main.js 파일을 요청할 수 있게 되었음을 확인
 
-15. /main 으로 접속했을때에도 main.html 화면과 동일하게 나타내기 :: app.js 에 아래 app.get 추가
+15. /main 으로 접속했을때에도 main.html 화면과 동일하게 나타내기
+
+  app.js 에 아래 app.get 추가
 
   ```
   app.get('/main', function(req,res){
@@ -135,4 +140,5 @@ image:
   ```
 
   localhost:3000/main  < 으로 화면 확인
+
   localhost:3000 < 화면과 같은 화면 출력

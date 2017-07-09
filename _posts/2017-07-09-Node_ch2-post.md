@@ -34,8 +34,10 @@ image:
 
   ```
 
+
 2. 구동확인
-  :: localhost:3000/form.html
+
+  localhost:3000/form.html
 
 3. email_post 라우팅 처리
   :: app.js 수정
@@ -47,9 +49,10 @@ image:
 
 4. post방식으로 값을 받아오려면 bady-parser 모듈을 설치해줘야함
 
-`npm install body-parser --save`
+  `npm install body-parser --save`
 
 5. app.js 에 모듈 등록
+
   ```
   var bodyParser = require('body-parser')
   ```
