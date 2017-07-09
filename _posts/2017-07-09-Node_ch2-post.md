@@ -14,24 +14,25 @@ image:
 
 ### POST 요청 처리
 1. /pubilc/form.html 생성
-  ```
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <title>email form</title>
-    </head>
-    <body>
-      <form action="/email_post" method="post">
-        email : <input type="text" name="email"> <br/>
-        submit <input type="submit">
-      </form>
+
+    ```
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <title>email form</title>
+      </head>
+      <body>
+        <form action="/email_post" method="post">
+          email : <input type="text" name="email"> <br/>
+          submit <input type="submit">
+        </form>
 
 
-    </body>
-  </html>
+      </body>
+    </html>
 
-  ```
+    ```
 
 
 2. 구동확인
@@ -73,7 +74,6 @@ image:
     ```
 
 8. 받아온 값을 화면에 보여주기 :: app.js
-
     ```
     app.post('/email_post', function(req,res){
     	console.log(req.body.email)
