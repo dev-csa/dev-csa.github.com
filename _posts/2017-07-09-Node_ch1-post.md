@@ -43,7 +43,7 @@ image:
 
 7. nodemon app.js
 
-***url routing 처리(GET 요청 처리)***
+### url routing 처리(GET 요청 처리)
 8. app.js 수정
 
     ```
@@ -94,7 +94,7 @@ image:
     })
     ```
 
-***static 디렉토리 설정***
+### static 디렉토리 설정
 12. app.js 수정
     ```
     app.use(express.static('public'))

@@ -12,7 +12,7 @@ image:
 
 # Node ch.2
 
-1. POST 요청 처리
+### POST 요청 처리
   /pubilc/form.html 생성
 
   ```
@@ -35,48 +35,89 @@ image:
   ```
 
 
-2. 구동확인
+1. 구동확인
 
-  localhost:3000/form.html
+    localhost:3000/form.html
 
-3. email_post 라우팅 처리
-  :: app.js 수정
-  ```
-  app.post('/email_post', function(req,res){
-  	res.send("post response")
-  })
-  ```
+2. email_post 라우팅 처리 ::app.js 수정
 
-4. post방식으로 값을 받아오려면 bady-parser 모듈을 설치해줘야함
+    ```
+    app.post('/email_post', function(req,res){
+    	res.send("post response")
+    })
+    ```
 
-  `npm install body-parser --save`
+3. post방식으로 값을 받아오려면 bady-parser 모듈을 설치해줘야함
 
-5. app.js 에 모듈 등록
+    `npm install body-parser --save`
 
-  ```
-  var bodyParser = require('body-parser')
-  ```
+4. app.js 에 모듈 등록
 
-6. post 로 값을 받아오는 형식 지정 :: app.js
+    ```
+    var bodyParser = require('body-parser')
+    ```
 
-  ```
-  app.use(bodyParser.json())
-  app.use(bodyParser.urlencoded({extended:true}))
-  ```
+5. post 로 값을 받아오는 형식 지정 :: app.js
 
-7. 받아온 값 사용 (여기선 email) :: app.js
+    ```
+    app.use(bodyParser.json())
+    app.use(bodyParser.urlencoded({extended:true}))
+    ```
 
-  ```
-  app.post('/email_post', function(req,res){
-  	***console.log(req.body.email)***
-  	res.send("post response")
-  })
-  ```
+6. 받아온 값 사용 (여기선 email) :: app.js
 
-8. 받아온 값을 화면에 보여주기 :: app.js
+    ```
+    app.post('/email_post', function(req,res){
+    	***console.log(req.body.email)***
+    	res.send("post response")
+    })
+    ```
 
-  ```
-  app.post('/email_post', function(req,res){
-  	console.log(req.body.email)
-  	res.send("<h1>Welcome!" + req.body.email + "</h1>")
-  ```
+7. 받아온 값을 화면에 보여주기 :: app.js
+
+    ```
+    app.post('/email_post', function(req,res){
+    	console.log(req.body.email)
+    	res.send("<h1>Welcome!" + req.body.email + "</h1>")
+    ```
+
+
+    ### View engine을 이용한 응답처리
+    ##### ejs나 jade와 같은 템플릿 엔진을 활용해 view 템플릿을 활용해 응답 할 수 있다
+
+    1. ejs 모듈 설치
+
+        `npm install ejs --save`
+
+    2. 모듈 사용해서 나타내기 :: app.js
+
+        ```
+        app.set('view engin', 'ejs')
+        ```
+    3. /views 경로 생성, /views/email.ejs 파일 생성
+
+        ```
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <title>email ejs template</title>
+          </head>
+          <body>
+            <h1>Welcom !! <%= email %> </h1>
+            <p>Nice to meet you</p>
+
+          </body>
+        </html>
+
+        ```
+
+    4. email.ejs를 사용하려면 :: app.js
+
+        ```
+        app.post('/email_post', function(req,res){
+        	console.log(req.body.email)
+        	//res.send("<h1>Welcome!" + req.body.email + "</h1>")
+        	res.render('email.ejs', {'email' : req.body.email})
+        })
+        ```
