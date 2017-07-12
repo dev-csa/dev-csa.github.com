@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node ch.2
-excerpt: "POST 요청 처리"
+excerpt: "[Node] POST 요청 처리"
 categories: [hello world]
 comments: true
 image:

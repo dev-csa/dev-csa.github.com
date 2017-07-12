@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node ch.1
-excerpt: "NPM 프로젝트 시작하기"
+excerpt: "[Node] NPM 프로젝트 시작하기"
 categories: [hello world]
 comments: true
 image:
