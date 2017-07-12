@@ -19,12 +19,12 @@ image:
 3. `$ npm init`
 4. express 웹서버를 사용할거임
 
-    `npm node install express --save`
+    `$ npm node install express --save`
     (package.json 에서 확인가능)
 
 5. app.js 생성
 
-    ```
+    {% highlight javascript %}
     var express = require('express')
     var app = express()
     app.listen(3000, function() {
@@ -32,7 +32,7 @@ image:
     });
 
     console.log("end if server code...");
-    ```
+    {% endhighlight %}
 
 6. node app.js
 
