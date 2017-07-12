@@ -92,12 +92,12 @@ image:
 
 2. 모듈 사용해서 나타내기 :: app.js
 
-    ```
+    {% highlight javascript %}
     app.set('view engin', 'ejs')
-    ```
+    {% endhighlight %}
 3. /views 경로 생성, /views/email.ejs 파일 생성
 
-    ```
+    {% highlight html %}
     <!DOCTYPE html>
     <html>
       <head>
@@ -111,14 +111,14 @@ image:
       </body>
     </html>
 
-    ```
+    {% endhighlight %}
 
 4. email.ejs를 사용하려면 :: app.js
 
-    ```
+    {% highlight javascript %}
     app.post('/email_post', function(req,res){
     	console.log(req.body.email)
     	//res.send("<h1>Welcome!" + req.body.email + "</h1>")
     	res.render('email.ejs', {'email' : req.body.email})
     })
-    ```
+    {% endhighlight %}
