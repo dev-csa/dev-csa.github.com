@@ -15,7 +15,7 @@ image:
 ### POST 요청 처리
 1. /pubilc/form.html 생성
 
-    ```
+    {% highlight html %}
     <!DOCTYPE html>
     <html>
       <head>
@@ -32,7 +32,7 @@ image:
       </body>
     </html>
 
-    ```
+    {% endhighlight %}
 
 
 2. 구동확인
@@ -41,11 +41,11 @@ image:
 
 3. email_post 라우팅 처리 ::app.js 수정
 
-    ```
+    {% highlight javascript %}
     app.post('/email_post', function(req,res){
     	res.send("post response")
     })
-    ```
+    {% endhighlight %}
 
 4. post방식으로 값을 받아오려면 bady-parser 모듈을 설치해줘야함
 
@@ -53,32 +53,33 @@ image:
 
 5. app.js 에 모듈 등록
 
-    ```
+    {% highlight javascript %}
     var bodyParser = require('body-parser')
-    ```
+    {% endhighlight %}
 
 6. post 로 값을 받아오는 형식 지정 :: app.js
 
-    ```
+    {% highlight javascript %}
     app.use(bodyParser.json())
     app.use(bodyParser.urlencoded({extended:true}))
-    ```
+    {% endhighlight %}
+
 
 7. 받아온 값 사용 (여기선 email) :: app.js
 
-    ```
+    {% highlight javascript %}
     app.post('/email_post', function(req,res){
     	***console.log(req.body.email)***
     	res.send("post response")
     })
-    ```
+    {% endhighlight %}
 
 8. 받아온 값을 화면에 보여주기 :: app.js
-    ```
+    {% highlight javascript %}
     app.post('/email_post', function(req,res){
     	console.log(req.body.email)
     	res.send("<h1>Welcome!" + req.body.email + "</h1>")
-    ```
+    {% endhighlight %}
 
 
 ### View engine을 이용한 응답처리
