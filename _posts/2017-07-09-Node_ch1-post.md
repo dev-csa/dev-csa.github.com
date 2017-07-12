@@ -47,7 +47,8 @@ image:
 ### url routing 처리(GET 요청 처리)
 8. app.js 수정
 
-    ```
+    {% highlight javascript %}
+
     var express = require('express')
     var app = express()
     app.listen(3000, function() {
@@ -57,11 +58,12 @@ image:
     app.get('/', function(req,res){
     	res.send("<h1>hi Thor</h1>")
     })
-    ```
+
+    {% endhighlight %}
 
 9. /public/main.html 생성
 
-    ```
+    {% highlight html %}
     <html>
       <head>
         <meta charset="utf-8">
@@ -73,7 +75,7 @@ image:
 
       </body>
     </html>
-    ```
+    {% endhighlight %}
 
 10. 구동확인
 
@@ -83,7 +85,7 @@ image:
 
 11. app.js 수정
 
-    ```
+    {% highlight javaScript %}
     var express = require('express')
     var app = express()
     app.listen(3000, function() {
@@ -93,25 +95,27 @@ image:
     app.get('/', function(req,res){
     res.sendFile(__dirname + "/public/main.html")
     })
-    ```
+
+    {% endhighlight %}
 
 ### static 디렉토리 설정
 12. app.js 수정
-    ```
+
+    {% highlight javascript %}
     app.use(express.static('public'))
-    ```
+    {% endhighlight %}
 
     public 경로 아래에 위치한 파일들을 모두 static으로 요청 받아옴
 
 13. /public/main.js 추가
 
-    ```
+    {% highlight javascript %}
     console.log("main js loaded");
-    ```
+    {% endhighlight %}
 
 14. main.html 수정
 
-    ```
+    {% highlight html %}
     !<!DOCTYPE html>
     <html>
       <head>
@@ -125,7 +129,7 @@ image:
 
       </body>
     </html>
-    ```
+    {% endhighlight %}
 
     main.js 파일을 요청할 수 있게 되었음을 확인
 
@@ -133,12 +137,12 @@ image:
 
     app.js 에 아래 app.get 추가
 
-    ```
+    {% highlight javascript %}
     app.get('/main', function(req,res){
     	res.sendFile(__dirname + "/public/main.html")
 
     })
-    ```
+    {% endhighlight %}
 
     localhost:3000/main  < 으로 화면 확인
 
