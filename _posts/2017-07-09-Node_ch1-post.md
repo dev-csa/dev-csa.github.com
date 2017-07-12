@@ -14,14 +14,15 @@ image:
 
 ### npm 프로젝트 시작하기
 
-1. 디렉토리 생성
-2. npm init
-3. express 웹서버를 사용할거임
+1. `$ mkdir nodeProject` 디렉토리 생성
+2. `$ cd nodeProject`
+3. `$ npm init`
+4. express 웹서버를 사용할거임
 
-    npm node install express --save
+    `npm node install express --save`
     (package.json 에서 확인가능)
 
-4. app.js 생성
+5. app.js 생성
 
     ```
     var express = require('express')
@@ -33,15 +34,15 @@ image:
     console.log("end if server code...");
     ```
 
-5. node app.js
+6. node app.js
 
     localhost:3000 < 서버 구동 확인
 
-6. nodemon 설치 (수정 사항 감지해서 자동 업데이트해주는 패키지)
+7. nodemon 설치 (수정 사항 감지해서 자동 업데이트해주는 패키지)
 
-    `sudo npm install nodemon -g`
+    `$ sudo npm install nodemon -g`
 
-7. nodemon app.js
+8. `$ nodemon app.js`
 
 ### url routing 처리(GET 요청 처리)
 8. app.js 수정

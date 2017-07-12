@@ -49,7 +49,7 @@ image:
 
 4. post방식으로 값을 받아오려면 bady-parser 모듈을 설치해줘야함
 
-    `npm install body-parser --save`
+    `$ npm install body-parser --save`
 
 5. app.js 에 모듈 등록
 
@@ -87,7 +87,7 @@ image:
 
 1. ejs 모듈 설치
 
-    `npm install ejs --save`
+    `$ npm install ejs --save`
 
 2. 모듈 사용해서 나타내기 :: app.js
 
