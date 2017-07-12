@@ -14,7 +14,7 @@ image:
 
 ### npm 프로젝트 시작하기
 
-1. `$ mkdir nodeProject` 디렉토리 생성
+* `$ mkdir nodeProject` 디렉토리 생성
 2. `$ cd nodeProject`
 3. `$ npm init`
 4. express 웹서버를 사용할거임
@@ -45,7 +45,7 @@ image:
 8. `$ nodemon app.js`
 
 ### url routing 처리(GET 요청 처리)
-8. app.js 수정
+* app.js 수정
 
     {% highlight javascript %}
 
@@ -99,7 +99,7 @@ image:
     {% endhighlight %}
 
 ### static 디렉토리 설정
-12. app.js 수정
+* app.js 수정
 
     {% highlight javascript %}
     app.use(express.static('public'))

@@ -13,7 +13,7 @@ image:
 # Node ch.2
 
 ### POST 요청 처리
-1. /pubilc/form.html 생성
+* /pubilc/form.html 생성
 
     {% highlight html %}
     <!DOCTYPE html>
@@ -34,12 +34,11 @@ image:
 
     {% endhighlight %}
 
-
-2. 구동확인
+* 구동확인
 
     localhost:3000/form.html
 
-3. email_post 라우팅 처리 ::app.js 수정
+* email_post 라우팅 처리 ::app.js 수정
 
     {% highlight javascript %}
     app.post('/email_post', function(req,res){
@@ -47,17 +46,17 @@ image:
     })
     {% endhighlight %}
 
-4. post방식으로 값을 받아오려면 bady-parser 모듈을 설치해줘야함
+* post방식으로 값을 받아오려면 bady-parser 모듈을 설치해줘야함
 
     `$ npm install body-parser --save`
 
-5. app.js 에 모듈 등록
+* app.js 에 모듈 등록
 
     {% highlight javascript %}
     var bodyParser = require('body-parser')
     {% endhighlight %}
 
-6. post 로 값을 받아오는 형식 지정 :: app.js
+* post 로 값을 받아오는 형식 지정 :: app.js
 
     {% highlight javascript %}
     app.use(bodyParser.json())
@@ -65,7 +64,7 @@ image:
     {% endhighlight %}
 
 
-7. 받아온 값 사용 (여기선 email) :: app.js
+* 받아온 값 사용 (여기선 email) :: app.js
 
     {% highlight javascript %}
     app.post('/email_post', function(req,res){
@@ -74,7 +73,7 @@ image:
     })
     {% endhighlight %}
 
-8. 받아온 값을 화면에 보여주기 :: app.js
+* 받아온 값을 화면에 보여주기 :: app.js
     {% highlight javascript %}
     app.post('/email_post', function(req,res){
     	console.log(req.body.email)
@@ -86,16 +85,16 @@ image:
 ##### ejs나 jade와 같은 템플릿 엔진을 활용해 view 템플릿을 활용해 응답 할 수 있다
 
 
-1. ejs 모듈 설치
+* ejs 모듈 설치
 
     `$ npm install ejs --save`
 
-2. 모듈 사용해서 나타내기 :: app.js
+* 모듈 사용해서 나타내기 :: app.js
 
     {% highlight javascript %}
     app.set('view engin', 'ejs')
     {% endhighlight %}
-3. /views 경로 생성, /views/email.ejs 파일 생성
+* /views 경로 생성, /views/email.ejs 파일 생성
 
     {% highlight html %}
     <!DOCTYPE html>
@@ -113,7 +112,7 @@ image:
 
     {% endhighlight %}
 
-4. email.ejs를 사용하려면 :: app.js
+* email.ejs를 사용하려면 :: app.js
 
     {% highlight javascript %}
     app.post('/email_post', function(req,res){
