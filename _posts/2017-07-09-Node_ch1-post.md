@@ -15,14 +15,14 @@ image:
 ### npm 프로젝트 시작하기
 
 * `$ mkdir nodeProject` 디렉토리 생성
-2. `$ cd nodeProject`
-3. `$ npm init`
-4. express 웹서버를 사용할거임
+* `$ cd nodeProject`
+* `$ npm init`
+* express 웹서버를 사용할거임
 
     `$ npm node install express --save`
     (package.json 에서 확인가능)
 
-5. app.js 생성
+* app.js 생성
 
     {% highlight javascript %}
     var express = require('express')
@@ -34,15 +34,15 @@ image:
     console.log("end if server code...");
     {% endhighlight %}
 
-6. node app.js
+* node app.js
 
     localhost:3000 < 서버 구동 확인
 
-7. nodemon 설치 (수정 사항 감지해서 자동 업데이트해주는 패키지)
+* nodemon 설치 (수정 사항 감지해서 자동 업데이트해주는 패키지)
 
     `$ sudo npm install nodemon -g`
 
-8. `$ nodemon app.js`
+* `$ nodemon app.js`
 
 ### url routing 처리(GET 요청 처리)
 * app.js 수정
@@ -61,7 +61,7 @@ image:
 
     {% endhighlight %}
 
-9. /public/main.html 생성
+* /public/main.html 생성
 
     {% highlight html %}
     <html>
@@ -77,13 +77,13 @@ image:
     </html>
     {% endhighlight %}
 
-10. 구동확인
+* 구동확인
 
     localhost:3000/public/main.html
 
     위 방법은 잘못된 방법임, 요청을 처리하도록 코드를 입력 해야함 :: res.sendFile()
 
-11. app.js 수정
+* app.js 수정
 
     {% highlight javaScript %}
     var express = require('express')
@@ -107,13 +107,13 @@ image:
 
     public 경로 아래에 위치한 파일들을 모두 static으로 요청 받아옴
 
-13. /public/main.js 추가
+* /public/main.js 추가
 
     {% highlight javascript %}
     console.log("main js loaded");
     {% endhighlight %}
 
-14. main.html 수정
+* main.html 수정
 
     {% highlight html %}
     !<!DOCTYPE html>
@@ -133,7 +133,7 @@ image:
 
     main.js 파일을 요청할 수 있게 되었음을 확인
 
-15. /main 으로 접속했을때에도 main.html 화면과 동일하게 나타내기
+* /main 으로 접속했을때에도 main.html 화면과 동일하게 나타내기
 
     app.js 에 아래 app.get 추가
 
