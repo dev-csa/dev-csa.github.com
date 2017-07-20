@@ -1,4 +1,17 @@
-# React ch.1 시작하기
+---
+layout: post
+title: React ch.1
+excerpt: "[React] React 프로젝트 시작하기"
+categories: [hello world]
+comments: true
+image:
+  feature:
+  credit: thomas shellberg
+  creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
+---
+
+
+# React 시작하기
 
 * IDE 는 ATOM 을 사용할것이므로 패키지를 설치한다
   language-babel 설치
