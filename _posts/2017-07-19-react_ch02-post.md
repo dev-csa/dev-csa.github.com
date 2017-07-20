@@ -13,29 +13,45 @@ image:
 # React 프로젝트 시작하기
 
 1. 새로운 프로젝트 경로 생성
+
   `$ mkdir react-skeleton`
+
   `$ cd react-skeleton`
+
   `$ mkdir public`
+
   `$ mkdir src`
 
+
+
 2. `$ npm init`
+
   npm init 실행하면 프로젝트를 생성하면서 프로젝트에 해당하는 정보를 이것저것 물어보는데,
   그냥 모두 엔터 쳐서 완료
-
   npm init 작업 후에 package.json파일이 자동으로 생성됨.
 
+
 3. 프로젝트에 사용할 패키지 install
+
   `$ npm install -g browserify`
+
   `$ npm install --save babelify`
+
   `$ npm install --save watchify`
+
   `$ npm install --save babel-preset-react`
+
   `$ npm install --save react`
+
   `$ npm install --save react-dom`
+
 
 
 4. src/components 폴더 생성
 
+
 5. src/components/main.jsx 파일 생성
+
   ```
   var React = require('react');
   var ReactDOM = require('react-dom');
@@ -45,6 +61,7 @@ image:
   ```
 
 6. src/components/List.jsx 파일 생성
+
   ```
   var React = require('react');
   var ListItem = require('./ListItem.jsx');
@@ -65,7 +82,10 @@ image:
 
   module.exports = List;
   ```
+
+
 7. src/components/ListItem.jsx 파일 생성
+
   ```
   var React = require('react');
   var ListItem = React.createClass({
@@ -82,7 +102,9 @@ image:
   module.exports = ListItem;
   ```
 
+
 8. public/index.html 파일 생성
+
   ```
   <!DOCTYPE html>
   <html>
@@ -97,10 +119,14 @@ image:
   </html>
   ```
 
+
 9. public/js/main.js js경로에 main.js파일 생성
-  이따가 npm start 하면 자동으로 코드가 생성된다. 파일만 생성해 두면 됨
+
+  후에 npm start 하면 자동으로 코드가 생성된다. 파일만 생성해 두면 됨
+
 
 10. package.json 파일 수정 > 설치한 패키지들을 사용하기 위해서
+
   ```
   {
     "name": "react-skeleton",
@@ -138,4 +164,4 @@ image:
 
 12. mian.js파일이 자동으로 수정됨을 확인.
 
-13.
+13. 화면 출력 확인 
