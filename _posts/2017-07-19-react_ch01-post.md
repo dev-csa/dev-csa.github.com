@@ -47,6 +47,7 @@ image:
 * babel-preset-react
 
   https://www.npmjs.com/package/babel-preset-react
+
   `$ npm install --save-dev babel-cli babel-preset-react`
 
   browserify모듈이 babel을 사용하도록 허용하는 모듈
