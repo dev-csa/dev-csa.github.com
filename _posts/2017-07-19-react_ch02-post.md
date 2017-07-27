@@ -24,6 +24,7 @@ image:
 
 
 
+
 2. `$ npm init`
 
     npm init 실행하면 프로젝트를 생성하면서 프로젝트에 해당하는 정보를 이것저것 물어보는데,
@@ -159,7 +160,7 @@ image:
     }
     ```
 
-    ***"start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js"***
+    scripts 항목에 ***"start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js"***
     를 추가함으로써, jsx파일의 수정사항을 watchfiy 패키지로 즉각 반영하고, babelify 패키지로 jsx형식의 코드를 js코드로 변환(?) 해줄 수 있게 되었다.
 
 11. `$ npm start`
