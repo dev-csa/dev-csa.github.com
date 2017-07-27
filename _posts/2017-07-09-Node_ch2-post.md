@@ -2,7 +2,7 @@
 layout: post
 title: Node ch.2
 excerpt: "[Node] POST 요청 처리"
-categories: [hello world]
+categories: [Node 강좌 따라하기]
 comments: true
 image:
   feature:
@@ -85,8 +85,11 @@ image:
 * 여기까지의 실행 화면 보기
 
 <img src="https://cdn-images-1.medium.com/max/400/1*lN38sJpDyL-yBmerTc7CKg.jpeg">
+
 <img src="https://cdn-images-1.medium.com/max/400/1*CuDWuFI4tQ_WTggcV-S1hg.jpeg">
+
 <img src="https://cdn-images-1.medium.com/max/400/1*V2RTHgGWTDZ6XqWpq28KIg.jpeg">
+
 
 
 ### View engine을 이용한 응답처리
@@ -159,5 +162,7 @@ image:
 
 
 * 실행 결과 확인
+
 <img src="https://cdn-images-1.medium.com/max/600/1*tu1iNFpRtRuSW0f4pMjrZQ.jpeg">
+
 <img src="https://cdn-images-1.medium.com/max/600/1*K6v2GmkgS7JhmzpdswoHjA.jpeg">

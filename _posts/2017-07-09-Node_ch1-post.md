@@ -2,7 +2,7 @@
 layout: post
 title: Node ch.1
 excerpt: "[Node] NPM 프로젝트 시작하기"
-categories: [hello world]
+categories: [Node 강좌 따라하기]
 comments: true
 image:
   feature:
