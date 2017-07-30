@@ -10,8 +10,9 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
+# React ch.01
 
-# React 시작하기
+## React 시작하기
 
 * IDE 는 ATOM 을 사용할것이므로 패키지를 설치한다
 

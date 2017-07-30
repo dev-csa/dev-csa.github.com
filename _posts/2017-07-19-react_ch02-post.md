@@ -10,7 +10,9 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
-# React 프로젝트 시작하기
+# React ch.02
+
+## React 프로젝트 시작하기
 
 1. 새로운 프로젝트 경로 생성
 
