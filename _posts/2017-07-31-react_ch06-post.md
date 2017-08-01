@@ -10,7 +10,7 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
-# React ch.07
+# React ch.06
 
 ## React Router
 
