@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React ch.06
+title: React ch.07
 excerpt: "[React] Multiple pages with React Router "
 categories: [React 강좌 따라하기]
 comments: true
