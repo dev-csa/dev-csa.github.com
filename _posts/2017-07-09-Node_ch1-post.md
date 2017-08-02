@@ -19,7 +19,7 @@ image:
 * `$ npm init`
 * express 웹서버를 사용할거임
 
-    `$ npm node install express --save`
+    `$ npm install express --save`
     (package.json 에서 확인가능)
 
 * app.js 생성
