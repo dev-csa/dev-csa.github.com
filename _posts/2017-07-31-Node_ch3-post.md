@@ -80,6 +80,15 @@ image:
 
     {% endhighlight %}
 
+    위 코드의 ejs를 랜더링 해주는 부분을 살펴보면,
+
+    ` res.render('email.ejs', {'email' : req.body.email}) `
+
+    /views/email.ejs 로 경로까지 지정하는것이 아니라 email.ejs 만 입력해 준 것을 확인할 수 있다.
+
+    view engine을 사용하면, 알아서 /views/XXX.ejs 경로에 위치한 .ejs 파일을 랜더링 하므로, 파일이름만 입력해주면 된다.
+
+
 
 * 실행 결과 확인
 
