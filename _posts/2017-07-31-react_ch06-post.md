@@ -2,7 +2,7 @@
 layout: post
 title: React ch.06
 excerpt: "[React] About Router "
-categories: [React 강좌 따라하기]
+categories: [React Tutorial]
 comments: true
 image:
   feature:

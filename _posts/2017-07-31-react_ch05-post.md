@@ -2,7 +2,7 @@
 layout: post
 title: React ch.05
 excerpt: "[React] Tips for React "
-categories: [React 강좌 따라하기]
+categories: [React Tutorial]
 comments: true
 image:
   feature:

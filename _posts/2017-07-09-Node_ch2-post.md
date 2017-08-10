@@ -2,7 +2,7 @@
 layout: post
 title: Node ch.02
 excerpt: "[Node] POST 요청 처리"
-categories: [Node 강좌 따라하기]
+categories: [Node Tutorial]
 comments: true
 image:
   feature:

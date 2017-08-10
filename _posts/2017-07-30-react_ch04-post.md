@@ -2,7 +2,7 @@
 layout: post
 title: React ch.04
 excerpt: "[React] Bootstrap & Jquery 활용"
-categories: [React 강좌 따라하기]
+categories: [React Tutorial]
 comments: true
 image:
   feature:

@@ -2,7 +2,7 @@
 layout: post
 title: React ch.08
 excerpt: "[React] comments in jsx & react "
-categories: [React 강좌 따라하기]
+categories: [React Tutorial]
 comments: true
 image:
   feature:
