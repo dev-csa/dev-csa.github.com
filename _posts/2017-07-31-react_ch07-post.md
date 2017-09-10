@@ -23,7 +23,8 @@ image:
 
 3. /src/Routes.jsx 생성
 
-    ```
+    ```typescript jsx
+
     var React = require('react');
     var ReactRouter = require('react-router');
     var Router = ReactRouter.Router;
@@ -46,7 +47,8 @@ image:
 
 4. /src/components/Base.jsx 생성
 
-    ```
+    ```typescript jsx
+
     var React = require('react');
 
     var Base = React.createClass({
@@ -68,7 +70,8 @@ image:
 
 5. /src/components/Page1.jsx 생성
 
-    ```
+    ```typescript jsx
+
     var React = require('react');
 
     var Page1 = React.createClass({
@@ -88,7 +91,8 @@ image:
 
 6. /src/components/Page2.jsx 생성
 
-    ```
+    ```typescript jsx
+
     var React = require('react');
 
     var Page2 = React.createClass({
@@ -109,7 +113,8 @@ image:
 
     Routes.jsx  수정
 
-    ```
+    ```typescript jsx
+
     var React = require('react');
     var ReactRouter = require('react-router');
     var Router = ReactRouter.Router;
@@ -135,7 +140,8 @@ image:
 
 8. /src/main.jsx 수정
 
-    ```
+    ```typescript jsx
+
     var React = require('react');
     var ReactDOM = require('react-dom');
     var Router = require('./Routes.jsx');
@@ -146,7 +152,8 @@ image:
 
 9. /public/js/index.html 수정
 
-    ```
+    ```html
+    
     <!DOCTYPE html>
     <html>
         <head>

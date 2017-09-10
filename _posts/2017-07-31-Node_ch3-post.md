@@ -26,6 +26,8 @@ image:
     {% highlight javascript %}
     app.set('view engine', 'ejs')
     {% endhighlight %}
+
+    
 * /views 경로 생성, /views/email.ejs 파일 생성
 
     {% highlight html %}

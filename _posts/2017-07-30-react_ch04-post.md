@@ -31,7 +31,8 @@ Download the compressed, production jQuery 3.2.1
 
 6. /src/components/ListManager.jsx  수정
 
-    ```
+    ```typescript jsx
+
     render: function() {
         return (
             <div className="col-sm-4">
@@ -54,7 +55,8 @@ Download the compressed, production jQuery 3.2.1
 
 7. /public/index.html 에 bootstrap 링크 입력
 
-    ```
+    ```html
+
     <!DOCTYPE html>
     <html>
         <head>
@@ -78,7 +80,8 @@ Download the compressed, production jQuery 3.2.1
 
 9. /src/components/ListManager.jsx  추가 수정(button, input css)
 
-    ```
+    ```typescript jsx
+
     render: function() {
 
         var divStyle ={
@@ -110,7 +113,8 @@ Download the compressed, production jQuery 3.2.1
 
 10. 위 코드에서 눈여겨 볼 것은, react는 코드 내에서 css style을 수정할 수 있다는 것이다.
 
-    ```
+    ```css
+    
     var divStyle ={
         marginTop: 10
     }

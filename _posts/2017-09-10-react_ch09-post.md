@@ -22,6 +22,7 @@ image:
     src/components/LeadCapture.jsx
 
     ```typescript jsx
+
     var React = require('react');
 
     var LeadCapture = React.createClass({
@@ -47,6 +48,7 @@ image:
     src/components/EmailField.jsx
 
     ```typescript jsx
+
     var React = require('react');
     var validator = require('email-validator');
 
@@ -100,6 +102,7 @@ image:
 3. src/main.jsx 에 컴포넌트 추가
 
     ```typescript jsx
+    
     var React = require('react');
     var ReactDOM = require('react-dom');
     var EmailField = require('./components/EmailField.jsx');

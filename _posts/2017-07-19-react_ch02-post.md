@@ -57,7 +57,8 @@ image:
 
 5. src/components/main.jsx 파일 생성
 
-    ```
+    ```js
+
     var React = require('react');
     var ReactDOM = require('react-dom');
     var List = require('./components/List.jsx');
@@ -67,7 +68,8 @@ image:
 
 6. src/components/List.jsx 파일 생성
 
-    ```
+    ```js
+
     var React = require('react');
     var ListItem = require('./ListItem.jsx');
 
@@ -91,7 +93,8 @@ image:
 
 7. src/components/ListItem.jsx 파일 생성
 
-    ```
+    ```js
+
     var React = require('react');
     var ListItem = React.createClass({
       render: function() {
@@ -110,7 +113,8 @@ image:
 
 8. public/index.html 파일 생성
 
-    ```
+    ```html
+
     <!DOCTYPE html>
     <html>
       <head>
@@ -132,7 +136,8 @@ image:
 
 10. package.json 파일 수정 > 설치한 패키지들을 사용하기 위해서
 
-    ```
+    ```json
+    
     {
       "name": "react-skeleton",
       "version": "1.0.0",
