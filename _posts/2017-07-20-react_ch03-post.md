@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [React] input값을 받아서 화면에 리스트로 바로 표시하기
+title: "[React] input값을 받아서 화면에 리스트로 바로 표시하기"
 excerpt: "React ch.03"
 categories: [React Tutorial]
 comments: true

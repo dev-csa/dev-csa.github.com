@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [React] About Router 
+title: "[React] About Router "
 excerpt: "React ch.06"
 categories: [React Tutorial]
 comments: true

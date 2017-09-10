@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [React] comments in jsx & react 
+title: "[React] comments in jsx & react "
 excerpt: "React ch.08"
 categories: [React Tutorial]
 comments: true

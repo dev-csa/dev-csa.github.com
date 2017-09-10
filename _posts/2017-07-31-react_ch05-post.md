@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [React] Tips for React
+title: "[React] Tips for React"
 excerpt: "React ch.05"
 categories: [React Tutorial]
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Node] View engine을 이용한 응답처리 
+title: "[Node] View engine을 이용한 응답처리 "
 excerpt: "Node ch.03"
 categories: [Node Tutorial]
 comments: true
