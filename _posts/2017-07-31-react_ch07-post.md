@@ -23,7 +23,7 @@ image:
 
 3. /src/Routes.jsx 생성
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var ReactRouter = require('react-router');
@@ -47,7 +47,7 @@ image:
 
 4. /src/components/Base.jsx 생성
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
 
@@ -70,7 +70,7 @@ image:
 
 5. /src/components/Page1.jsx 생성
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
 
@@ -91,7 +91,7 @@ image:
 
 6. /src/components/Page2.jsx 생성
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
 
@@ -113,7 +113,7 @@ image:
 
     Routes.jsx  수정
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var ReactRouter = require('react-router');
@@ -140,7 +140,7 @@ image:
 
 8. /src/main.jsx 수정
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var ReactDOM = require('react-dom');

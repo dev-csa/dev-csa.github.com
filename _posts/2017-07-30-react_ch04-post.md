@@ -31,7 +31,7 @@ Download the compressed, production jQuery 3.2.1
 
 6. /src/components/ListManager.jsx  수정
 
-    ```typescript jsx
+    ```js
 
     render: function() {
         return (
@@ -80,7 +80,7 @@ Download the compressed, production jQuery 3.2.1
 
 9. /src/components/ListManager.jsx  추가 수정(button, input css)
 
-    ```typescript jsx
+    ```js
 
     render: function() {
 

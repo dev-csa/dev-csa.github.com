@@ -18,7 +18,7 @@ image:
 
 1. src/components/NameField.jsx 생성
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
 
@@ -50,7 +50,7 @@ image:
 
 2. LeadCapture 에서 name과 email 컴포넌트 처리할 수 있도록 src/components/LeadCapture.jsx 수정
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var EmailField = require('./EmailField.jsx');
@@ -92,7 +92,7 @@ image:
 
 3. src/main.jsx 수정
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var ReactDOM = require('react-dom');
@@ -106,7 +106,7 @@ image:
 4. public/index.html 수정
 
     ```html
-    
+
     <!DOCTYPE html>
     <html>
         <head>
@@ -142,7 +142,7 @@ image:
 
     EmailField.jsx 수정 (claer 함수 추가)
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var validator = require('email-validator');
@@ -183,7 +183,7 @@ image:
 
     NameField.jsx 수정 (claer 함수 추가)
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
 
@@ -219,7 +219,7 @@ image:
 
     LeadCapture.jsx 수정
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var EmailField = require('./EmailField.jsx');
@@ -273,7 +273,7 @@ image:
 
    main.jsx 수정
 
-   ```typescript jsx
+   ```js
 
    var React = require('react');
    var ReactDOM = require('react-dom');

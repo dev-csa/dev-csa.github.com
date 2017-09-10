@@ -27,7 +27,7 @@ image:
   **여기선 text, index 에 해당됨**
 
 
-  ```typescript jsx
+  ```js
 
   var React = require('react');
   var ListItem = require('./ListItem.jsx');
@@ -49,7 +49,7 @@ image:
   {}대괄호 내부에는 자바스크립트 코드가 들어간다.
 
 
-  ```typescript jsx
+  ```js
 
   var React = require('react');
 
@@ -70,7 +70,7 @@ image:
 
   4. react-skeleton/src/components/ListManager.jsx 파일 생성
 
-    ```typescript jsx
+    ```js
 
     var React = require('react');
     var List = require('./List.jsx');
@@ -117,7 +117,7 @@ image:
 
 5. /src/main.jsx 파일 수정
 
-  ```typescript jsx
+  ```js
 
   var React = require('react');
   var ReactDOM = require('react-dom');
@@ -131,7 +131,7 @@ image:
 6. /public/index.html 수정
 
   ```html
-  
+
   <!DOCTYPE html>
   <html>
       <head>
