@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React ch.04
-excerpt: "[React] Bootstrap & Jquery 활용"
+title: [React] Bootstrap & Jquery 활용
+excerpt: "React ch.04"
 categories: [React Tutorial]
 comments: true
 image:

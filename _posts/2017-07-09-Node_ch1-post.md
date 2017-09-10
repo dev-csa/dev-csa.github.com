@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node ch.01
-excerpt: "[Node] NPM 프로젝트 시작하기"
+title: [Node] NPM 프로젝트 시작하기
+excerpt: "Node ch.01"
 categories: [Node Tutorial]
 comments: true
 image:

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React ch.01
-excerpt: "[React] React 시작하기"
+title: [React] React 시작하기
+excerpt: "React ch.01"
 categories: [React Tutorial]
 comments: true
 image:

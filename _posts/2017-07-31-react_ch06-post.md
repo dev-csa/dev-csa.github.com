@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React ch.06
-excerpt: "[React] About Router "
+title: [React] About Router 
+excerpt: "React ch.06"
 categories: [React Tutorial]
 comments: true
 image:
@@ -10,9 +10,7 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
-# React ch.06
-
-## React Router
+# React ch.06 _ React Router
 
 ### 라우팅이란?
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React ch.07
-excerpt: "[React] Multiple pages with React Router "
+title: [React] Multiple pages with React Router 
+excerpt: "React ch.07"
 categories: [React Tutorial]
 comments: true
 image:

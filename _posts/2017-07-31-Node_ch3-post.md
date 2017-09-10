@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node ch.03
-excerpt: "[Node] View engine"
+title: [Node] View engine을 이용한 응답처리 
+excerpt: "Node ch.03"
 categories: [Node Tutorial]
 comments: true
 image:
@@ -10,9 +10,8 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
-# Node ch.03
+# Node ch.03 _ View engine을 이용한 응답처리
 
-### View engine을 이용한 응답처리
 ##### ejs나 jade와 같은 템플릿 엔진을 활용해 view 템플릿을 활용해 응답 할 수 있다
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React ch.05
-excerpt: "[React] Tips for React "
+title: [React] Tips for React
+excerpt: "React ch.05"
 categories: [React Tutorial]
 comments: true
 image:
@@ -10,7 +10,7 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
-# React ch.04
+# React ch.05
 
 ## Tips for React
 
