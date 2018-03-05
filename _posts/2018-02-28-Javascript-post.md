@@ -2,7 +2,7 @@
 layout: post
 title: "자바스크립트로 HTML 테이블을 엑셀로 Export 하기"
 excerpt: HTML table export as excel in js
-categories: hello world
+categories: [hello world]
 comments: true
 image:
   feature:
@@ -13,57 +13,61 @@ image:
 
 # 자바스크립트로 HTML 테이블을 엑셀로 Export 하기
 
->>> 참조 https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md
-
+> 참조 https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md
+    위 참조 경로에서 txt파일이나 csv파일로 저장하는 방법 확인할 수 있음. 
 
 1.
-```javascript
-  <head>
-  <script type="text/javascript" src="js/filesaver.js"></script>   
-  </head>
-  <body>
-    <table id="table_id">
-      <tr>                                                                
-        <th width="140">산출지표</th>
-        <th width="95">A</th>
-        <th width="95">B</th>
-        <th width="95">C</th>
-        <th width="95">Total</th>
-      </tr>
-      <tr>                                                                
-        <th width="140">예산</th>
-        <th width="95">10,000,000</th>
-        <th width="95">120,000,000</th>
-        <th width="95">10,800,000</th>
-        <th width="95">90,000,000</th>
-      </tr>
-    </table>
-    <br/>
-    <input type="button" id="exportExcel" value="Save as Excel" onclick="javascript:fnExcelReport('table_id', '파일명1');" />            
-  </body>
-
-
-  <script type="text/javascript">
-    function fnExcelReport(id, name) {
-          var tab_text = '<html xmlns:x="urn:schemas-microsoft-com:office:excel">';
-          tab_text = tab_text + '<head><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet>';
-          tab_text = tab_text + '<x:Name>Sheet1</x:Name>';
-          tab_text = tab_text + '<x:WorksheetOptions><x:Panes></x:Panes></x:WorksheetOptions></x:ExcelWorksheet>';
-          tab_text = tab_text + '</x:ExcelWorksheets></x:ExcelWorkbook></xml></head><body>';
-          tab_text = tab_text + "<table border='1px'>";
-          var exportTable = $('#' + id).clone();
-          exportTable.find('input').each(function (index, elem) { $(elem).remove(); });
-          tab_text = tab_text + exportTable.html();
-          tab_text = tab_text + '</table></body></html>';
-          var fileName = name + '.xls';
-
-          //Save the file
-          var blob = new Blob([tab_text], { type: "application/vnd.ms-excel;charset=euc-kr" })
-          window.saveAs(blob, fileName);     
-      }
-    </script>
-
-```
+    ```javascript
+    
+      <head>
+      <script type="text/javascript" src="js/filesaver.js"></script>   
+      </head>
+      <body>
+        <table id="table_id">
+          <tr>                                                                
+            <th width="140">산출지표</th>
+            <th width="95">A</th>
+            <th width="95">B</th>
+            <th width="95">C</th>
+            <th width="95">Total</th>
+          </tr>
+          <tr>                                                                
+            <th width="140">예산</th>
+            <th width="95">10,000,000</th>
+            <th width="95">120,000,000</th>
+            <th width="95">10,800,000</th>
+            <th width="95">90,000,000</th>
+          </tr>
+        </table>
+        <br/>
+        <input type="button" id="exportExcel" value="Save as Excel" onclick="javascript:fnExcelReport('table_id', '파일명1');" />            
+      </body>
+       
+      <script type="text/javascript">
+        function fnExcelReport(id, name) {
+              var tab_text = '<html xmlns:x="urn:schemas-microsoft-com:office:excel">';
+              tab_text = tab_text + '<head><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet>';
+              tab_text = tab_text + '<x:Name>Sheet1</x:Name>';
+              tab_text = tab_text + '<x:WorksheetOptions><x:Panes></x:Panes></x:WorksheetOptions></x:ExcelWorksheet>';
+              tab_text = tab_text + '</x:ExcelWorksheets></x:ExcelWorkbook></xml></head><body>';
+              tab_text = tab_text + "<table border='1px'>";
+              var exportTable = $('#' + id).clone();
+              exportTable.find('input').each(function (index, elem) { $(elem).remove(); });
+              tab_text = tab_text + exportTable.html();
+              tab_text = tab_text + '</table></body></html>';
+              var fileName = name + '.xls';
+    
+              //Save the file
+              var blob = new Blob([tab_text], { type: "application/vnd.ms-excel;charset=euc-kr" })
+              window.saveAs(blob, fileName);     
+          }
+        </script>
+    
+    ```
+    fnExcelReport(id, name) 에서, 
+    id: 테이블 id
+    name: 저장하고자 하는 파일명 
+    
 
 2. 해당 작업을 실행시키려면, 아래 js 코드를  ../js/FileSaver.js 로 저장
     
