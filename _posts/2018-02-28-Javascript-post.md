@@ -75,6 +75,7 @@ image:
 2. 해당 작업을 실행시키려면, 아래 js 코드를  ../js/FileSaver.js 로 저장
     
     ```javascript
+    
       /* FileSaver.js
        * A saveAs() FileSaver implementation.
        * 2014-07-25
