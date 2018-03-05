@@ -15,6 +15,7 @@ image:
 #### 기존 fnExcelReport 함수에 try-catch 코드를 추가하였음. 
 
 1.
+
     ```javascript
       <script type="text/javascript">
         function fnExcelReport(id, name) {
