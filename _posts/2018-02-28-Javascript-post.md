@@ -17,7 +17,7 @@ image:
 
 
 1.
-```
+```javascript
 {% highlight HTML %}
   <head>
   <script type="text/javascript" src="js/filesaver.js"></script>   

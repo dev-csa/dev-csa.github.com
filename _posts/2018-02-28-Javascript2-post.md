@@ -16,7 +16,7 @@ image:
 fnExcelReport 함수를 이용한 엑셀 export작업은 ie10부터 지원하므로 이 문제를 해결하고자 함
 
 1.
-```
+```javascript
 {% highlight HTML %}
   <head>
   <script type="text/javascript" src="js/filesaver.js"></script>   
