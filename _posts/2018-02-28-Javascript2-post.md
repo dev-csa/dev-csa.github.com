@@ -11,37 +11,11 @@ image:
 ---
 
 
-# 자바스크립트로 HTML 테이블을 엑셀로 Export 하기 (IE9 이하 오류 해결)
-
-fnExcelReport 함수를 이용한 엑셀 export작업은 ie10부터 지원하므로 이 문제를 해결하고자 함
+### fnExcelReport 함수를 이용한 엑셀 export작업은 ie10부터 지원하므로 이 문제를 해결하고자 함
+#### 기존 fnExcelReport 함수에 try-catch 코드를 추가하였음. 
 
 1.
     ```javascript
-      <head>
-      <script type="text/javascript" src="js/filesaver.js"></script>   
-      </head>
-      <body>
-        <table id="table_id">
-          <tr>                                                                
-            <th width="140">산출지표</th>
-            <th width="95">A</th>
-            <th width="95">B</th>
-            <th width="95">C</th>
-            <th width="95">Total</th>
-          </tr>
-          <tr>                                                                
-            <th width="140">예산</th>
-            <th width="95">10,000,000</th>
-            <th width="95">120,000,000</th>
-            <th width="95">10,800,000</th>
-            <th width="95">90,000,000</th>
-          </tr>
-        </table>
-        <br/>
-        <input type="button" id="exportExcel" value="Save as Excel" onclick="javascript:fnExcelReport('table_id', '파일명1');" />            
-      </body>
-    
-    
       <script type="text/javascript">
         function fnExcelReport(id, name) {
               var tab_text = '<html xmlns:x="urn:schemas-microsoft-com:office:excel">';
@@ -88,3 +62,6 @@ fnExcelReport 함수를 이용한 엑셀 export작업은 ie10부터 지원하므
         </script>
         
     ```
+
+새로 추가된 코드가 실행되면(ie9일 때) 파일 저장 팝업이 뜨고, 파일명 수정할 수 있음.
+파일 저장 형식이 html파일로 나타나지만 실제로 저장해 보면 xls 파일로 잘 저장됨.

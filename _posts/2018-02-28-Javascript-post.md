@@ -14,9 +14,12 @@ image:
 # 자바스크립트로 HTML 테이블을 엑셀로 Export 하기
 
 > 참조 https://github.com/eligrey/FileSaver.js/blob/master/LICENSE.md
-    위 참조 경로에서 txt파일이나 csv파일로 저장하는 방법 확인할 수 있음. 
 
-1.
+위 참조 경로에서 txt파일이나 csv파일로 저장하는 방법 확인할 수 있음. 
+
+
+1. 전체 소스코드 
+
     ```javascript
     
       <head>
