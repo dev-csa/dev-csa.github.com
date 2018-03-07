@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "자바스크립트 Chart 라이브러리 추천"
-excerpt: HTML table export as excel in js
+excerpt: 
 categories: [hello world]
 comments: true
 image:
