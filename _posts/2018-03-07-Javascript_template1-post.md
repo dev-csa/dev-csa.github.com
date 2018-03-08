@@ -31,7 +31,7 @@ eChart는 상당히 많은 종류의 차트를 제공하고있으며, 그래프�
  <img src="https://cdn-images-1.medium.com/max/800/1*JYUthLv6XEIEKUX6UaVVZA.jpeg"> 
  
  <br/><br/><br/>
- - 소스코드
+
  
  ```javascript
             <script type="text/javascript">
@@ -138,6 +138,7 @@ eChart는 상당히 많은 종류의 차트를 제공하고있으며, 그래프�
                     }
 
 ```
+
 <br/><br/><br/>
 
 toolbox 항목에서 그래프를 사용자가 만질 수 있도록 하는 기능을 추가할 수 있는데, 
