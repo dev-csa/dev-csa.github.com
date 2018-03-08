@@ -146,3 +146,9 @@ toolbox 항목에서 그래프를 사용자가 만질 수 있도록 하는 기�
 이 기능이 제일 맘에 들지만 한자로 나온다는게 문제! 
 
 영문으로 바꾸는 방법을 찾는다면 추후 기재 하도록 하겠음.
+
+```javascript
+     tab_text = tab_text + exportTable.html();
+     tab_text = tab_text + '</table></body></html>';
+     var fileName = name + '.xls';
+```
