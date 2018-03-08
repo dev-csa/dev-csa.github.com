@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "자바스크립트 Chart 라이브러리 추천"
-excerpt: 
+excerpt: Javascript Library 
 categories: [hello world]
 comments: true
 image:
