@@ -25,13 +25,9 @@ eChart는 상당히 많은 종류의 차트를 제공하고있으며, 그래프�
 
 
  <h4> - Line and Bar mix chart 이용한 예시 
+ <br/>
  
     <h5>1월~5월의 오전-오후 기온과 평균습도 그래프 
- 
- <img src="https://cdn-images-1.medium.com/max/800/1*JYUthLv6XEIEKUX6UaVVZA.jpeg"> 
- 
- <br/>
-
  
  ```javascript
             <script type="text/javascript">
@@ -138,6 +134,8 @@ eChart는 상당히 많은 종류의 차트를 제공하고있으며, 그래프�
                     }
 
 ```
+
+<img src="https://cdn-images-1.medium.com/max/800/1*JYUthLv6XEIEKUX6UaVVZA.jpeg"> 
 
 <br/><br/><br/>
 
