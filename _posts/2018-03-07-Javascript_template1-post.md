@@ -24,9 +24,9 @@ eChart는 상당히 많은 종류의 차트를 제공하고있으며, 그래프�
 한가지 단점이라면, 중국어로 되어 있다는 점인데, 어차피 소스코드는 영어이므로 문제없이 이용가능
 
 
- - Line and Bar chart 이용한 예시 
+ <h4> Line and Bar mix chart 이용한 예시 
  
- 1월~5월의 오전-오후 기온과 평균습도 그래프 
+    1월~5월의 오전-오후 기온과 평균습도 그래프 
  
  <img src="https://cdn-images-1.medium.com/max/800/1*JYUthLv6XEIEKUX6UaVVZA.jpeg">
  
