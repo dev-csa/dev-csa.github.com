@@ -30,7 +30,7 @@ eChart는 상당히 많은 종류의 차트를 제공하고있으며, 그래프�
  
  <img src="https://cdn-images-1.medium.com/max/800/1*JYUthLv6XEIEKUX6UaVVZA.jpeg"> 
  
- <br/><br/><br/>
+ <br/>
 
  
  ```javascript
