@@ -33,13 +33,15 @@ React.js는 페이스북 엔지니어가 개발한 자바스크립트 라이브�
 ``` 
 위 h태그 부분이 jsx 코드이다.
 
-jsx는 자바스크립트이 확장형 문법이지만 컴파일 작업을 통해야만 자바스크립트로 작동할 수 있다.
+jsx는 자바스크립트이 확장형 문법이지만 컴파일 작업을 통해야만 자바스크립트로 작동할 수 있다. <br/>
 
 즉, jsx는 html처럼 생겼지만 자바스크립트 파일에서 볼 수 있는 코드라고 보면 된다.
 
 또한 생긴건 html이지만 자바스크립트 문법을 사용해 표현된다.
 
 그렇기 때문에 jsx는 변수도 만들 수 있고 함수, 배열, 객체 등을 자바스크립트의 문법에 따라 만들 수 있다.
+
+<br/><br/>
 
 #### Example: jsx코드의 객체 선언  
 ```
@@ -63,7 +65,7 @@ const title = <h1 id="title">Introduction to React.js: Part I</h1>;
 
 const panda = <img src="images/panda.jpg" alt="panda" width="500px" height="500px" />;
 ```
-<br/><br/>
+<br/>
 
 중첩된 html 코드를 하나의 변수로 선언하는 것도 가능하다.
 #### Example: jsx코드의 html 태그 사용2
