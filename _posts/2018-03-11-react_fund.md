@@ -28,7 +28,7 @@ React.js는 페이스북 엔지니어가 개발한 자바스크립트 라이브�
 하지만, 이 코드는 html 에서도 javascript 에서도 독자적으로 동작하지 않는다.
 
 
-```jsx harmony
+```
 <h1>Hello world</h1>
 ``` 
 위 h태그 부분이 jsx 코드이다.
@@ -42,7 +42,7 @@ jsx는 자바스크립트이 확장형 문법이지만 컴파일 작업을 통�
 그렇기 때문에 jsx는 변수도 만들 수 있고 함수, 배열, 객체 등을 자바스크립트의 문법에 따라 만들 수 있다.
 
 #### Example: jsx코드의 객체 선언  
-```jsx harmony
+```
 const myTeam = {
   center: <li>Benzo Walli</li>,
   powerForward: <li>Rasha Loa</li>,
@@ -56,7 +56,7 @@ const myTeam = {
 뿐만아니라 html요소들을 자유자재로 다룰 수 있다.
 
 #### Example: jsx코드의 html 태그 사용 
-```jsx harmony
+```
 <a href="http://www.example.com">Welcome to the Web</a>;
 
 const title = <h1 id="title">Introduction to React.js: Part I</h1>;
@@ -67,7 +67,7 @@ const panda = <img src="images/panda.jpg" alt="panda" width="500px" height="500p
 
 중첩된 html 코드를 하나의 변수로 선언하는 것도 가능하다.
 #### Example: jsx코드의 html 태그 사용2
-```jsx harmony
+```
 const theExample = (
    <a href="https://www.example.com">
      <h1>
