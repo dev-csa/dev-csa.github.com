@@ -10,6 +10,8 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
+>출처: https://www.codecademy.com
+
 ## React 기초 
 
 React.js는 페이스북 엔지니어가 개발한 자바스크립트 라이브러리 이다.
