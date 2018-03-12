@@ -11,9 +11,9 @@ image:
 ---
 
 
-# 자바스크립트로 Chart 그리는 작업 시 유용한 라이브러리
+### 자바스크립트 Chart 라이브러리 추천
 
-[ECharts]  https://ecomfe.github.io/echarts-examples/public/index.html
+#### [ECharts]  https://ecomfe.github.io/echarts-examples/public/index.html
 
 <img src="https://cdn-images-1.medium.com/max/800/1*Q7dFNsCP0eSi23quzWs1fQ.jpeg">
 
@@ -24,13 +24,12 @@ eChart는 상당히 많은 종류의 차트를 제공하고있으며, 그래프�
 한가지 단점이라면, 중국어로 되어 있다는 점인데, 어차피 소스코드는 영어이므로 문제없이 이용가능
 
 
- <h4> - Line and Bar mix chart 이용한 예시 
- <br/>
+ #### Line and Bar mix chart 이용한 예시 
  
     <h5>1월~5월의 오전-오후 기온과 평균습도 그래프 
  
  
- ```
+ ```javascript
  
 <script type="text/javascript">
         var dom = document.getElementById("container");
