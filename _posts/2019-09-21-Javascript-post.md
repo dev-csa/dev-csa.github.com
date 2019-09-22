@@ -21,8 +21,9 @@ image:
 
 ## Value Types and Reference Types
 
-value의 경우
-```
+- value의 경우
+
+```javascript
   let a = 50;
   let b = a;
 
@@ -32,8 +33,8 @@ value의 경우
 
 ```
 
-Reference의 경우
-```
+- reference의 경우
+```javascript
   const cat = ["Thor", "Lime"];
   const cute = cat;
 
@@ -51,17 +52,22 @@ console.log([10] === [10]);
 
 
 ## Type coercion(conversion)
+```javascript
 console.log(66 + true) // 67
 console.log(66 + "Thor") // 66Thor
 console.log(66 + 10 + "Thor") // 76Thor
 
+```
+
+
 ## ==와 ===의 차이
+```javascript
 console.log("1" == 1);
 //true type conversion이 일어남
 console.log("1" === 1);
 // False conversion 일어나지 않음
-
-=== 쓰는것이 버그를 피해갈 수 있음..
+```
+=== 쓰는것이 버그를 피해갈 수 있음!
 
 ## js는 none blocking 언어이다.
 
@@ -74,28 +80,34 @@ js가 blocking 언어였다면 아무것도 할 수 없다는 뜻..
 
 ## Expression vs Statement
 
-# Expression
+- Expression
 
 Expression returns a value
 value를 리턴하는 것 = expression
 
-ex)
+예)
+```javascript
 function add(a,b){
 return a + b;
 }
 
 const how = add(5, 6);
 // = const how = 11; <<< 함수가 리턴하는 것!
+```
 
-# Statement
+- Statement
 
 명령 혹은 지시
 
+```javascript
 const thing = if(true){
 
 }
 
 console.log(if(true(){});
+````
+
+
 
 위 둘 다 에러임. 값이 아니라서 오류.
 저 자리에는 expression이 들어가야함
@@ -105,10 +117,12 @@ console.log(if(true(){});
 Immediately-Invoked function Expression
 함수. 자기자신을 부르는 함수.
 
-ex) 함수를 만들고 부른다.
+예) 함수를 만들고 부른다.
+```javascript
 (function(){
 const secretUsers = ["aa", "bb", "cc"];
 console.log(secretUsers);
 })()
+```
 
 이렇게 하면 웹 콘솔창에서 secretUsers로 선언된 애들이 보이지 않게된다!! 즉, 숨길 수 있다는 것! 클라이언트가 접근이 불가능해서 수정할 수 없게된다.
