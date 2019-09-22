@@ -11,7 +11,7 @@ image:
 ---
 
 
->출처: https://github.com/leonardomso/33-js-concepts 노마드코더 보고 정리했음
+>출처: https://github.com/leonardomso/33-js-concepts (노마드코더 영상보고 정리)
 
 ## Call stack
 자바스크립트가 함수 실행을 핸들하는 방법 중 하나
@@ -34,6 +34,7 @@ image:
 ```
 
 - reference의 경우
+
 ```javascript
   const cat = ["Thor", "Lime"];
   const cute = cat;
@@ -95,6 +96,7 @@ const how = add(5, 6);
 // = const how = 11; <<< 함수가 리턴하는 것!
 ```
 
+
 - Statement
 
 명령 혹은 지시
@@ -107,10 +109,9 @@ const thing = if(true){
 console.log(if(true(){});
 ````
 
-
-
 위 둘 다 에러임. 값이 아니라서 오류.
 저 자리에는 expression이 들어가야함
+
 
 ## IIFE
 
