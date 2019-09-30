@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "자바스크립트에서 알아둬야 할 핵심 컨셉"
-excerpt: Things to know about javascript
+excerpt: "Things to know about javascript"
 categories: [Javascript]
 comments: true
 image:
