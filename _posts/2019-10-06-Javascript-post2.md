@@ -17,6 +17,7 @@ image:
 
 자바스크립트는 html 요소들을 DOM형태로 변경 가능 하다 (객체단위로 접근해서 갖고놀수있다)
 `console.log(document);`
+
 <img src="https://miro.medium.com/max/1118/1*O31VV7G3O8Zpg0kyo2v-tw.png" />
 
 
@@ -29,6 +30,7 @@ image:
 
 ```
 `console.dir(title)`을 실행해서 콘솔창에서 살펴보면 접근할 수 있는 객체들을 모두 확인할 수 있다.
+
 <img src="https://miro.medium.com/max/1072/1*bojzXIAT_GA4NfL60tVXdA.png" />
 
 
@@ -48,6 +50,7 @@ image:
 이벤트를 다룰 함수를 만들때 마다, 자바스크립트는 자동적으로 함수를 객체에 붙인다.
 
 저 코드를 실행하면, 인터넷창이 resize될때마다 이벤트 객체가 호출된다.
+
 <img src="https://miro.medium.com/max/1174/1*oy5kVwi5mPziqpXxQBlbkg.png">
 
 ### javacript dom event mdn
