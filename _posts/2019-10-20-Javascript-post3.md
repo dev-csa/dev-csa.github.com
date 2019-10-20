@@ -10,8 +10,7 @@ image:
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
 ---
 
-
-<바닐라 자바스크립트 강의에서 사용 한 함수와 프로퍼티 정리>
+바닐라 자바스크립트 강의에서 사용 한 함수와 프로퍼티 정리
 
 ## Date() 와 setInterval()
 setInterval() 함수를 이용하여 화면 새로고침 없이 날짜와 시간의 변화를 확인 할 수 있다.
@@ -105,3 +104,16 @@ localStorage에 저장된 데이터 확인하는 방법
  : 개발자도구 - Application - Storage 에서 확인가능
 
 <img src="https://miro.medium.com/max/2356/1*n7NDPj3OB7JQ8QcHXCbb9w.png" />
+
+
+## Random 함수
+자바스크립트 기본 제공함수인 Math.random()는 정수반환이 아니므로..
+
+0~9까지의 랜덤 숫자 추출
+```javascript
+  function genRandom(){
+    const number = Math.floor(Math.random()*10);
+    return number;
+  }
+
+```
