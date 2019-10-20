@@ -20,8 +20,7 @@ image:
 <img src="https://miro.medium.com/max/2712/1*iZjgsfeaHEXoiVRfgFjpzA.png" />
 
 
-1. 사용자의 현재 위치 확인
-## navigator.geolocation.getCurrentPosition 메서드
+## navigator.geolocation.getCurrentPosition 메서드를 이용하여 사용자의 현재 위치 확인
 
 ```javascript
 
@@ -59,12 +58,14 @@ navigator.geolocation.getCurrentPosition 메서드를 이용해서 사용자 위
 
 ```
 
-2. 좌표값을 이용해서 날씨 가져오기
 
-openweathermap 페이지에서 아래 API 사용법 확인
+
+## 좌표값을 이용해서 날씨 가져오기
+
+### openweathermap 페이지에서 아래 API 사용법 확인
 <img src="https://miro.medium.com/max/3012/1*KbhROEwz6OCRyVHPIiwQ-Q.png" />
 
-좌표를 이용해서 값을 가져오는 방법 확인
+### 좌표를 이용해서 값을 가져오는 방법 확인
 <img src="https://miro.medium.com/max/1976/1*Qky0NPHaWiNRK76Eqo_yHg.png" />
 
 
@@ -89,8 +90,10 @@ openweathermap 페이지에서 아래 API 사용법 확인
 
 ```
 
-위에서 만들어준 handleGeoSucces() 함수로 좌표를 받아와서 getWeather로 넘겨서,
+
+getWeather() 함수를 생성해 좌표를 넘겨서 정보를 받아왔다. 
 받아온 API response 는 json객체 형태이며, 온도 뿐만 아니라 다양한 날씨정보를 확인할 수 있다.
+
 나는 temp 와 사용자 위치 지역명인 name 항목을 가져왔다.
 
 <img src="https://miro.medium.com/max/2332/1*_sAVAeD7NySLSPu6pFQB5g.png" />
