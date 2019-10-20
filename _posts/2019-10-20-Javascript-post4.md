@@ -29,8 +29,8 @@ image:
   }
 
 ```
-askForCoords() 함수를 만들어서
-navigator.geolocation.getCurrentPosition 메서드를 이용해서 사용자 위치를 확인할 수 있다.
+
+***navigator.geolocation.getCurrentPosition*** 메서드를 이용해서 사용자 위치를 확인할 수 있다.
 
 `navigator.geolocation.getCurrentPosition(success[, error[, [options]])`
 
@@ -65,6 +65,8 @@ navigator.geolocation.getCurrentPosition 메서드를 이용해서 사용자 위
 ### openweathermap 페이지에서 아래 API 사용법 확인
 <img src="https://miro.medium.com/max/3012/1*KbhROEwz6OCRyVHPIiwQ-Q.png" />
 
+
+
 ### 좌표를 이용해서 값을 가져오는 방법 확인
 <img src="https://miro.medium.com/max/1976/1*Qky0NPHaWiNRK76Eqo_yHg.png" />
 
@@ -91,7 +93,8 @@ navigator.geolocation.getCurrentPosition 메서드를 이용해서 사용자 위
 ```
 
 
-getWeather() 함수를 생성해 좌표를 넘겨서 정보를 받아왔다. 
+
+getWeather() 함수를 생성해 좌표를 넘겨서 정보를 받아왔다.
 받아온 API response 는 json객체 형태이며, 온도 뿐만 아니라 다양한 날씨정보를 확인할 수 있다.
 
 나는 temp 와 사용자 위치 지역명인 name 항목을 가져왔다.
